@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AboutBody from "../components/AboutBody";
 
 const About: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const About: NextPage = () => {
       </Head>
       <section>
         <Header />
-
+        <AboutBody />
         <Footer />
       </section>
     </section>

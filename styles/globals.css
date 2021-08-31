@@ -32,6 +32,7 @@
 .home-text {
   margin: 1.5rem 0;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .count-details {
@@ -59,4 +60,32 @@
   border-radius: 4px;
   padding: 0.25rem 1rem;
   color: orangered;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.img-left {
+  height: 225px;
+  background: #cf99f55e;
+  margin-right: 2rem;
+  grid-column: span 3;
+}
+
+.text {
+  grid-column: 4 /13;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+@media screen and (max-width: 767px) {
+  .img-left {
+    height: auto;
+    margin-right: 0.8rem;
+  }
+  .text{
+    padding-bottom: 3rem;
+  }
 }
